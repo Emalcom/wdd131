@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="WDD 131 - Dynamic Web Fundamentals - MALCOM ENGWEDU - A summary of the page content.">
+    <meta name="author" content="MALCOM ENGWEDU">
+    <link rel="stylesheet" href="styles/base.css">
+    <title>WDD 131 - Dynamic Web Fundamentals - Malcom Engwedu</title>
+</head>
+<body>
+    <header>
+        <h1>WDD 131 - Dynamic Web Fundamentals</h1>
+        <nav>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/engwedu-malcom-a6221a212?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">LinkedIn Profile</a></li>
+                <li><a href="https://byui.instructure.com/">I-Learn</a></li>
+                <li><a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/alma/37?lang=eng&id=p37#p37">Favorite Scripture</a></li>
+                <li><a href="#">Final Project Folder</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="card">
+            <h2>About me</h2>
+            <img src="images/Malcom.jpg" alt="MALCOM">
+            <p>Am Malcom Engwedu from Uganda, a member of the church of Jesus Christ of latter-day Saints from Mengo ward
+                Kampala southstake.Am returned missionary I served in Ghana Accra West Mission, am also a software development
+                student at BYU-Idaho University:</p>
+          
+        </section>
+
+        <section class="card2">
+            <h2>Kampala, Uganda</h2>
+            <img src="images/Flag_of_Uganda.svg.png" alt="Flag of Uganda">
+            <p>Uganda, officially known as the Republic of Uganda, is a landlocked country in East Africa. 
+                It is bordered by Kenya to the east, South Sudan to the north, the Democratic Republic of the Congo to the west, 
+                Rwanda to the southwest, and Tanzania to the south1. The country is known for its diverse landscapes that include the snow-capped Rwenzori Mountains and immense Lake Victoria. 
+                Uganda’s capital and largest city is Kampala, which is a vibrant hub of culture and commerce2. 
+                The nation is home to a rich tapestry of ethnic groups, with English and Swahili serving as official languages3:</p>
+           
+        </section>
+
+        <section class="card3">
+            <h2>Web Dev Resources</h2>
+            <ul>
+                <li><a href="https://www.freecodecamp.org/news/learn-web-development-free-full-stack-developer-courses-for-beginners/">freecodecamp</a></li>
+                <li><a href="https://developer.mozilla.org/en-US/docs/Learn">developer.mozilla</a></li>
+                <li><a href="https://www.codecademy.com/catalog/subject/web-development">codecademy</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> 🌴 MALCOM ENGWEDU.🌴 UGANDA.</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script>
+        // Populate current year
+        document.getElementById('currentyear').textContent = new Date().getFullYear();
+        
+        // Populate last modified date
+        document.getElementById('lastModified').textContent = 'Last Updated: ' + document.lastModified;
+    </script>
+</body>
+</html>
