@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temples</title>
+    
+    <!-- Google Fonts Link -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS for mobile-first design -->
+    <link rel="stylesheet" href="temples.css">
+    
+    <!-- CSS for larger screen design (media query for larger screens inside this file) -->
+    <link rel="stylesheet" href="temples-large.css">
+
+    <!-- Link to external JavaScript, defer ensures it runs after the HTML loads -->
+    <script defer src="temples.js"></script>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>Temple Album</h1>
+        
+        <!-- Navigation Menu with Hamburger for Mobile -->
+        <nav>
+            <button id="hamburger" class="hamburger">&#9776;</button>
+            <ul id="menu" class="hidden">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Old</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Large</a></li>
+                <li><a href="#">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Main Section -->
+    <main>
+        <h2>Home</h2>
+        
+        <!-- Image Gallery with figure and figcaption for each temple -->
+        <section class="gallery">
+            <figure>
+                <img src="images/accra_ghana_temple_lds.jpeg" alt="accra_ghana_temple_lds">
+                <figcaption>Accra Ghana Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/albuquerque_temple_lds.jpeg" alt="albuquerque_temple_lds">
+                <figcaption>Albuquerque Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/atlanta_georgia_temple_sunset.jpeg" alt="atlanta_georgia_temple_sunset">
+                <figcaption>Atlanta Georgia Temple</figcaption>
+            </figure> 
+            <figure>
+                <img src="images/bern_switzerland_temple_lds.jpeg" alt="bern_switzerland_temple_lds">
+                <figcaption>Bern Switzerland Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/billings_temple_lds.jpeg" alt="billings_temple_lds">
+                <figcaption>Billings Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/cordoba_argentina_temple_rendering.jpeg" alt="cordoba_argentina_temple_rendering">
+                <figcaption>Cordoba Argentina Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/freiberg_germany_temple_lds.jpeg" alt="freiberg_germany_temple_lds">
+                <figcaption>Freiberg Germany Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/fukuoka_japan_temple_lds.jpeg" alt="fukuoka_japan_temple_lds">
+                <figcaption>Fukuoka Japan Temple</figcaption>
+            </figure>
+            <figure>
+                <img src="images/hamilton_new_zealand_lds_temple.jpeg" alt="hamilton_new_zealand_lds_temple">
+                <figcaption>Hamilton New Zealand Temple</figcaption>
+            </figure>
+            <!-- Repeat figure elements for more temples -->
+        </section>
+    </main>
+    
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; <span id="year"></span> 🌴 ENGWEDU MALCOM 🌴 Uganda</p>
+        <p>| Date last modified: <span id="lastModified"></span></p>
+    </footer>
+</body>
+</html>
