@@ -6,162 +6,255 @@
 }
 
 /* Body Styles */
-body {
+/* body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
     color: #333;
-    padding: 20px;
-    line-height: 1.6;
-}
+    padding: 0; 
+} */
 
 /* Header Styles */
-/*header {
+/* header {
     background-color: #003366;
     color: white;
     padding: 20px;
     text-align: center;
-}
-*/
+} */
+
 header h1 {
-    background-color: #003366;
-    color: white;
-    border-radius: 20px;
-    text-align:center;
-    font-size: 2.5em;
-    font-weight: normal;
-    font-family: sans-serif;
-}
-
-nav {
-    background-color: darkblue;
-    border-radius: 20px;
-}
-nav ul {
-    list-style: none;
-    padding: 0;
-    text-align: center;
-    margin-top: 15px;
-}
-
-nav ul li {
-    display: inline;
-    margin-right: 30px;
-}
-
-nav ul li a {
-    color: #cccccc;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-}
-
-nav ul li a:hover {
-    color: #fff700;
+    font-size: 3.5rem;
+    font-weight: bolder;
 }
 
 /* Main Content Styles */
 main {
+    position: relative;
+}
+
+/* Hero Section */
+.hero {
+    position: relative; /* For positioning child elements */
+}
+
+.hero img {
+    width: 100%; /* Full width for responsiveness */
+    height: auto;
+}
+
+/* Content Section Styles */
+.content {
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start; /* Align to the left */
 }
 
-/* Card Section Styles */
-.card, .card2, .card3 {
-    display: flex;
-    background-color: white;
-    border: 2px solid #003366;
-    padding: 5px;
-    border-radius: 8px;
-    width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-.card {
-    height: 50%;
-}
-
-.card3{
-    margin-top: -200px;
-    height: 25%;
-}
-
-.card img, .card2 img {
-    max-width: 150px;
-    height: 150px;
-    border-radius: 8px;
-    margin-bottom: 10px;
-    margin-top: 80px;
-    margin-right: 25px;
-}
-
-h2 {
+.data-box {
     position: absolute;
-    background-color: #003366;
+    top: 100px; /* Adjust according to layout */
+    left: 20px;
+    background: rgba(255, 255, 255, 0.5); /* More opacity */
+    padding: 20px 30px;
+    height: 350px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    width: 400px; /* Adjust based on available space */
+}
+
+ul {
+    list-style-type: none; /* Remove default bullets */
+    padding-left: 0; /* No left padding */
+}
+
+li {
+    margin-bottom: 10px; /* Space between list items */
+    font-size: 1.2em; /* Slightly larger font */
+}
+
+
+/* .data-box {
+    position: absolute; 
+    top: -850px; 
+    left: 20px; 
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 50px; 
+    border-radius: 10px;
+    height: 400px;
+    box-shadow: 0 105px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.data-box h2 {
+    position: relative;
+    background-color: #292D33; /* Green ribbon color */
     color: white;
-    padding: 10px;
-    border-radius: 5px;
-    font-size: 1.5em;
-    margin-bottom: 15px;
+    padding: 20px 20px; /* Adjust for padding */
+    margin-bottom: 20px; /* Add space below the heading */
+    display: inline-block; /* Keep the title in line with the box */
+    font-size: 1.5em; /* Adjust as necessary */
+    width: 50px; /* Adjust based on the effect you need */
+    width: 400px; /* Adjust based on the effect you need */
+    border-radius: 5px; /* Slightly round the corners */
 }
 
-.card p, .card2 p, .card3 ul {
-    margin-top: 80px;
-    font-size: 15px;
-    color: #333;
+.data-box h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Control the ribbon's starting point */
+    height: 100%;
+    background-color: #292D33; /* Same color as the ribbon */
+    border-radius: 5px 0 0 5px; /* Optional, round the left edge */
 }
 
 
-/* Web Dev Resources Section */
-.card3 ul {
-    list-style: none;
-    margin-bottom: -10px;
+/* .weather {
+    position: absolute; 
+    bottom: 100px; 
+    right: 3px;
+    background: rgba(255, 255, 255, 0.8); 
+    padding: 5px; 
+    border-radius: 10px;
+    width: 30%;
+    height: 250px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+.weather {
+    position: absolute;
+    bottom: 100px; /* Adjust depending on the layout, place below the .data-box */
+    right: 20px; /* Align to the left, like .data-box */
+    background: rgba(255, 255, 255, 0.5); /* Similar opacity */
+    padding: 20px 30px; /* Consistent padding */
+    height: 250px; /* Adjust based on content */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Same shadow effect */
+    width: 400px; /* Keep width aligned with .data-box */
 }
 
-.card3 ul li {
-    margin-bottom: 8px;
+.weather h2 {
+    position: relative;
+    background-color: #292D33; /* Match the ribbon color */
+    color: white;
+    padding: 10px 20px; /* Adjust for padding */
+    margin-bottom: 20px; /* Space below the heading */
+    display: inline-block;
+    font-size: 1.5em; /* Match font size */
+    width: 390px; /* Keep the width consistent */
+    border-radius: 5px; /* Slightly rounded corners */
 }
 
-.card3 ul li a {
-    color: #003366;
-    text-decoration: none;
+.weather h2::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -15px; /* Ribbon starting point */
+    height: 100%;
+    background-color: #292D33; /* Same color as the ribbon */
+    border-radius: 5px 0 0 5px; /* Slight rounding on left side */
 }
 
-.card3 ul li a:hover {
-    text-decoration: underline;
+.weather p {
+    margin-bottom: 10px; /* Space between paragraphs */
+    font-size: 1.2em; /* Font size to match .data-box list */
 }
+
+.weather-icon {
+    font-size: 1.5em; /* Icon size adjustment */
+}
+
 
 /* Footer Styles */
 footer {
-    background-color: #003366;
-    margin-top: -10px;
     color: white;
-    border-radius: 20px;
     text-align: center;
-    padding: 10px 0;
+    padding: 70px;
+    font-size: 1.5rem;
+    font-weight: bolder;
     position: relative;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 5px 0;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    main {
-        flex-direction: column;
+    header h1 {
+        font-size: 2em;
     }
 
-    .card, .card2, .card3 {
-        width: 100%;
+    .data-box,
+    .weather {
+        padding: 10px; /* Less padding for smaller screens */
+    }
+}
+
+/* Mobile View Styling */
+@media (max-width: 500px) {
+
+    /* Hero Section */
+    .hero img {
+        width: 100%;  /* Full width for responsiveness */
+        height: auto; /* Adjust height proportionally */
     }
 
-    nav ul li {
-        display: block;
+    /* Header Styles */
+    header h1 {
+        font-size: 2rem; /* Reduce the header size for small screens */
+        text-align: center;
         margin-bottom: 10px;
+    }
+
+    /* Data Box Styling */
+    .data-box {
+        position: relative;
+        top: 0;
+        left: 0;
+        width: 100%;  /* Full width on small screens */
+        padding: 10px 15px;  /* Smaller padding for compact design */
+        background: rgba(255, 255, 255, 0.8); /* Maintain opacity */
+        box-shadow: none; /* Remove shadow for simplicity */
+        border-radius: 0; /* No rounded corners on mobile */
+    }
+
+    .data-box h2 {
+        background-color: #292D33; /* Change to match red header */
+        color: white;
+        padding: 15px 0;
+        margin-bottom: 10px;
+        text-align: center;
+        width: 100%; /* Full width for mobile */
+    }
+
+    /* Weather Box Styling */
+    .weather {
+        position: relative;
+        width: 100%;  /* Full width for small screens */
+        padding: 10px 15px;  /* Smaller padding for compact design */
+        background: rgba(255, 255, 255, 0.8);
+        box-shadow: none; /* Remove shadow */
+        border-radius: 0; /* No rounded corners */
+        margin-top: 10px;  /* Add spacing from data-box */
+        bottom: 0;
+        right: 0;
+    }
+
+    .weather h2 {
+        background-color: #292D33; /* Match data-box color */
+        color: white;
+        padding: 15px 0;
+        text-align: center;
+        width: 100%; /* Full width */
+        font-size: 1.3rem; /* Smaller font */
+    }
+
+    .weather p {
+        font-size: 1rem; /* Reduce paragraph font size */
+    }
+
+    /* Footer Styling */
+    footer {
+        background-color: #EC3D45; /* Match color to header */
+        color: white;
+        font-size: 0.9rem;  /* Reduce font size */
+        padding: 20px 0; /* Add vertical padding */
+        text-align: center; /* Center align the text */
+    }
+
+    footer p {
+        margin: 5px 0; /* Reduce spacing between paragraphs */
     }
 }
