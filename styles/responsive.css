@@ -1,0 +1,12 @@
+/* Media queries for responsiveness */
+@media (max-width: 500px) {
+    .hero img {
+        width: 100%; /* Responsive image */
+    }
+}
+
+@media (max-width: 1000px) {
+    .hero img {
+        width: 100%; /* Responsive image */
+    }
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UG-Uganda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/responsive.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/place.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Uganda</h1>
+    </header>
+
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/hero_small.webp" media="(max-width: 500px)">
+                <img src="images/hero_large.webp" alt="Hero Image" width="1000" height="500"> 
+            </picture>
+        </section>
+    
+        <section class="content">
+            <div class="data-box">
+                <h2>Data</h2>
+                <ul>
+                    <li><b>Area:</b> 241,038 km²</li>
+                    <li><b>Population:</b> 47.25 million</li>
+                    <li><b>Capital:</b> Kampala</li>
+                    <li><b>Languages:</b> English</li>
+                    <li><b>Currency:</b> Uganda Shillings</li>
+                    <li><b>TimeZone:</b> GMT+3</li>
+                    <li><b>Calling Code:</b> +256</li>
+                </ul>
+            </div>
+            
+            <div class="weather">
+                <h2>Weather <span class="weather-icon">⛅</span></h2>
+                <p id="weather-info">Temperature: 22°C <br> Wind Speed: 8 km/h</p>
+                <p id="wind-chill">Wind Chill: <span id="wind-chill-value">N/A</span></p>
+            </div>
+        </section>
+    </main>    
+
+    <footer>
+        <p>&copy; <span id="current-year"></span> 🌴 MALCOM ENGWEDU. 🌴 UGANDA.</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
