@@ -1,0 +1,126 @@
+/* Basic body styles */
+html, body {
+    height: 100%; /* Make sure the body covers the entire page */
+    margin: 0; /* Remove default margin */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column; /* Stack header, main, and footer vertically */
+}
+
+/* Header styling */
+header {
+    background-color: #4b0f39;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-bottom: 10px;
+}
+
+/* Main form container */
+main {
+    flex: 1; /* Takes up available space between header and footer */
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+}
+
+form {
+    background-color: #d8c9d3;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%; /* Set form width to 90% of its container */
+}
+
+/* Form group styles */
+.form-group {
+    margin-bottom: 15px; /* Space between form elements */
+}
+
+/* Labels */
+label {
+    display: block; /* Make labels block elements */
+    font-weight: bold; /* Bold font for labels */
+    margin-bottom: 5px; /* Space between label and input */
+    color: #4b0f39; /* Color for labels */
+}
+
+/* Input, select, and textarea styles */
+input[type="text"],
+input[type="date"],
+select,
+textarea {
+    width: 100%; /* Full width for inputs */
+    padding: 10px; /* Padding inside inputs */
+    margin-top: 5px; /* Space above inputs */
+    border: 1px solid #ccc; /* Border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+/* Rating stars */
+#rating {
+    display: flex; /* Flex display for rating stars */
+    justify-content: space-between; /* Space out stars */
+}
+
+#rating input[type="radio"] {
+    display: none; /* Hide radio buttons */
+}
+
+#rating label {
+    font-size: 1.5em; /* Font size for stars */
+    cursor: pointer; /* Pointer cursor for interactivity */
+}
+
+/* Highlight stars on hover or checked */
+#rating input[type="radio"]:checked + label,
+#rating label:hover,
+#rating label:hover ~ label {
+    color: #ffcc00; /* Color for highlighted stars */
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+    margin-right: 10px; /* Space between checkbox and label */
+}
+
+/* Submit button styles */
+input[type="submit"] {
+    background-color: #4b0f39; /* Background color for submit button */
+    color: white; /* Text color for submit button */
+    padding: 12px; /* Padding inside button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor for button */
+    font-size: 1em; /* Font size for button text */
+    width: 100%; /* Full width for button */
+    margin-top: 10px; /* Space above button */
+    transition: background-color 0.3s ease; /* Transition for hover effect */
+}
+
+input[type="submit"]:hover {
+    background-color: #382128; /* Darker color on hover */
+}
+
+/* Footer styling */
+footer {
+    background-color: #100425; /* Background color for footer */
+    color: white; /* Text color for footer */
+    text-align: center; /* Center text in footer */
+    padding: 10px 0; /* Padding inside footer */
+    margin-top: 10px;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 600px) {
+    main {
+        width: 100%; /* Full width for mobile */
+        margin: 20px; /* Margin for mobile layout */
+        padding: 15px; /* Padding for mobile layout */
+    }
+}
