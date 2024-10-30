@@ -209,7 +209,7 @@ h2 {
 .employee-info {
     flex: 1;
 }
-.gallery {
+.products-gallery {
     display: grid;
     gap: 1rem;
     padding: 2rem;
@@ -217,7 +217,7 @@ h2 {
     background-color: rgba(255, 255, 255, 0.5);
 }
 
-.gallery figure {
+.products-gallery figure {
     margin: 0;
     position: relative;
     overflow: hidden;
@@ -226,7 +226,7 @@ h2 {
     cursor: pointer;
 }
 
-.gallery img {
+.products-gallery img {
     width: 100%;
     height: auto;
     display: block;
@@ -234,7 +234,7 @@ h2 {
     border-radius: 8px;
 }
 
-.gallery figcaption {
+.products-gallery figcaption {
     font-size: 1rem;
     color: #333;
     text-align: center;
@@ -242,11 +242,12 @@ h2 {
 }
 
 /* Hover Effect */
-.gallery figure:hover img {
+.products-gallery figure:hover img {
     transform: scale(1.1);
 }
 
-.gallery figure:hover figcaption {
+.products-gallery figure:hover figcaption {
     font-weight: bold;
     color: #d8568f;
 }
+
